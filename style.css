@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+}
+header,nav,section,.content-container,footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== Menu ==========*/
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 4em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+    width: 50px;
+    transition: 0.3s;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+nav {
+    justify-content: space-between;
+    width: max-content;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+nav a:hover {
+    border: 1px solid #f05454;
+}
+/* ========== Hero Section ==========*/
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+/* ========== Footer ==========*/
+footer {
+    background: #161a20;
+    padding: 3em;
+}
+/* плавный скролл */
+html {
+    scroll-behavior: smooth;
+}
+#home {
+    justify-content: space-around;
+}
+#home div {
+    display: flex;
+    flex-direction: column;
+    background-color: #161a20;
+    border-radius: 10px;
+    box-shadow: 3px 3px 16px 6px #060606;
+    border: 1px;
+    width: 20%;
+    height: 40%;
+    padding: 1em;
+}
+#home h2 {
+    color: rgb(231, 75, 205);
+}
+#home p {
+    color: #b3b3b3;
+}
+#home img {
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    transition: 1100ms;
+}
+#home img:hover {
+    transform: scale(1.2);
+}
+#home .content-card1 {
+    align-items: flex-start;
+    transition: 1500ms;
+}
+#home .content-card1:hover {
+    transform: translate(15px,-15px);
+}
+#home .content-card2 {
+    align-items: center;
+    text-align: center;
+    transition: 1500ms;
+}
+#home .content-card2:hover {
+    transform: translate(5px,-15px);
+}
+#home .content-card3 {
+    align-items: flex-end;
+    text-align: end;
+    transition: 1500ms;
+}
+#home .content-card3:hover {
+    transform: translate(-15px, -15px);
+}
+
+/*         task2             */
+
+#section-1 {
+    justify-content: space-around;
+}
+#section-1 .card {
+    width: 22%;
+    height: 70%;
+    box-shadow: inset 5px 5px 5px #161a20, inset -5px -5px 5px #161a20, 5px 5px 5px 5px #161a20, -5px -5px 5px 5px #161a20;
+    border-radius: 15px;
+    border: 5px solid #222831;
+    justify-content: center;
+}
+#section-1 .card .box {
+    width: 93%;
+    height: 97%;
+    margin: 11px;
+    background-color: #161a20;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms;
+}
+#section-1 .card .box .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+#section-1 .card .box .content h2 {
+    font-size: 6em;
+    color: rgba(99, 99, 99, 0.1);
+}
+#section-1 .card .box .content h3 {
+    font-size: 2.5em;
+}
+#section-1 .card .box .content p {
+    color: #b3b3b3;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+#section-1 .card .box .content a {
+    padding: 8px 20px;
+    background-color: #03a9f4;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0);
+}
+#section-1 .card:hover .box {
+    background: linear-gradient(to top right, rgb(223, 29, 223),rgb(92, 11, 199));
+    transform: translate(0, -30px);
+}
+#section-1 .card:hover .box .content h2 {
+    color: rgba(99, 99, 99, 0.7);
+}
+#section-1 .card:hover .box .content a {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    background-color: #f05454;
+}
+
+/*         task3             */
+
+#section-2 {
+    justify-content: space-around;
+}
+#section-2 .card {
+    width: 22%;
+    height: 60%;
+    border-radius: 15px;
+    background-color: #161a20;
+    transition: 1000ms;
+    text-align: center;
+    overflow: hidden;
+}
+#section-2 .card img {
+    transform: translateY(60%);
+    width: 90%;
+    margin-bottom: 2em;
+    transition: 1000ms;
+}
+#section-2 .card h2 {
+    color: rgb(25 114 191);
+    transform: translateY(10vh);
+    transition: 1000ms;
+}
+#section-2 .card .capacity, #section-2 .card .type-capacity,
+#section-2 .card .connectors,#section-2 .card a {
+    visibility: hidden;
+    transform: translateY(33vh);
+    transition: 1000ms;
+}
+#section-2 .card a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    margin: 2em;
+    margin-top: 4em;
+    background-color: #03a9f4;
+    width: 30%;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+#section-2 .card:hover img{
+    transform: translateY(-1px);
+}
+#section-2 .card:hover .capacity, #section-2 .card:hover .type-capacity,
+#section-2 .card:hover .connectors, #section-2 .card:hover h2, #section-2 .card:hover a {
+    visibility: visible;
+    transform: translateY(-40%);
+    transition: 1500ms;
+}
+
+/* кастомный скроллбар */
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #3300ff48, #ff00ea49);
+}
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #3300ff, #ff00eb);
+    border-radius: 20px;
+}
+
+/*       task 5           */
+
+#section-3 .banner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1em;
+    width: 70%;
+    height: 60%;
+    right: 5em;
+    background: linear-gradient(to right bottom, purple, blue);
+    border-radius: 20px;
+    gap: 2em;
+}
+#section-3 .banner .image {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    order: 3;
+}
+#section-3 .banner .image img {
+    width: 400px;
+    height: 340px;
+}
+#section-3 .banner .content {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    padding-left: 3em;
+    opacity: 0;
+    transition: 300ms;
+}
+#section-3 .banner h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+#section-3 .banner p {
+    color: #b3b3b3;
+}
+#section-3 .banner a {
+    text-decoration: none;
+    padding: 1em;
+    margin: 2em;
+    background-color: #03a9f4;
+    width: 30%;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+#section-3 .banner:hover .image img {
+    transition: 500ms;
+    transform: scale(1.2, 1.5) translateX(50%);
+}
+#section-3 .banner:hover .image {
+    width: 50%;
+}
+#section-3 .banner:hover .content {
+    opacity: 1;
+    transition: 1000ms;
+    width: 50%;
+}
